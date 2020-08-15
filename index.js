@@ -220,17 +220,16 @@ ctx.strokeRect(0, 0, canvas.width, canvas.height);
 const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'welcome-image.png'); 	
 channel.send(`Welcome to the server, ${member}!`, attachment); });
 
-  }
-    
+  }   
 if(message.content === "-botinfo") {
- let embed7 = new Discord.MessageEmbed()
+ let embed8 = new Discord.MessageEmbed()
  .setTitle('bot-info')
 .setDescription('je suis un bot créé par jordan sur python et mon prefix est `-` ')
  .addField('mon site web est disponible avec ')
 .setFooter('ticketReact');
  message.react('📩')
  
- message.channel.send(embed7);
- 
+ message.channel.send(embed8);
+  }
 })
 client.login(process.env.TOKEN);
