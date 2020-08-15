@@ -203,31 +203,13 @@ chan.send("Support will be here shortly").then((m)=>{
  }
     }
 }
-
-client.on('guildMemberAdd', async member => { 	
-const channel = member.guild.channels.cache.find(ch => ch.name === 'member-log'); 	
-if (728139161181224982) return; 	
-
-const canvas = Canvas.createCanvas(700, 250); 	
-const ctx = canvas.getContext('2d'); 
 	
-const background = await Canvas.loadImage('./wallpaper.jpg'); 	
-ctx.drawImage(background, 0, 0, canvas.width, canvas.height); 	
-// Select the color of the stroke 	
-ctx.strokeStyle = '#74037b'; 	
-// Draw a rectangle with the dimensions of the entire canvas 	
-ctx.strokeRect(0, 0, canvas.width, canvas.height); 	
-const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'welcome-image.png'); 	
-channel.send(`Welcome to the server, ${member}!`, attachment); });
-
-  }   
-if(message.content === "-botinfo") {
+if(message.content === "-botinfo"){
  let embed8 = new Discord.MessageEmbed()
  .setTitle('bot-info')
 .setDescription('je suis un bot créé par jordan sur python et mon prefix est `-` ')
  .addField('mon site web est disponible avec ')
-.setFooter('ticketReact');
- message.react('📩')
+.setFooter('bot-info');
  
  message.channel.send(embed8);
   }
