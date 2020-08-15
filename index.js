@@ -1,7 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = "?";
-const ytdl = require('ytdl-core');
 client.on("ready", message => {
     console.log('bot => ok');
     client.user.setActivity('develeper mon bot', { type:'STREAMING'});
