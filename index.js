@@ -1,9 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const prefix = "?";
+const prefix = "-";
 client.on("ready", message => {
     console.log('bot => ok');
-    client.user.setActivity('develeper mon bot', { type:'STREAMING'});
+    client.user.setActivity('develeper mon bot', { type:'PLAYING'});
      
 })
 
@@ -16,7 +16,7 @@ client.on("message", message => {
         message.channel.send('salut <a:valide:731232586411540552>');
     }
         
-    if(message.content === `!help`){
+    if(message.content === `-help`){
          var help = '!ping => pong !'
                      '!hello => bonjour!'
                       'studio => la music'
@@ -37,7 +37,7 @@ client.on("message", message => {
                              
     }
     
-if (message.content === "?help"){
+if (message.content === "-help"){
 let embed = new Discord.MessageEmbed()
 .setTitle('Hello! :)')
 .setDescription("**moderations**")
@@ -50,12 +50,12 @@ let embed = new Discord.MessageEmbed()
 message.channel.send(embed);
  
     }
-if(message.content === `?wl`){
-    message.reply("vient d'avoir accès à inviteManager");
+if(message.content === `-wl`){
+    message.reply("vient d'avoir accès à moi");
       
    }
       
-if (message.content === `?ticket`){
+if (message.content === `-ticket`){
 let embed = new Discord.MessageEmbed()
 .setTitle('')
 .setImage('https://cdn.discordapp.com/attachments/728139161181224989/743476135894974554/8644.jpg')
@@ -65,7 +65,7 @@ let embed = new Discord.MessageEmbed()
 message.channel.send(embed);
 
    } 
-if (message.content === `.mod`){
+if (message.content === `-mod`){
 let embed = new Discord.MessageEmbed()
 .setTitle('voici mes commands !help') 
 .setDescription('<===Invitation==>')
@@ -78,7 +78,7 @@ message.channel.send(embed);
 
    }
    
-if(message.content === `?info`){
+if(message.content === `-info`){
 let embed = new Discord.MessageEmbed()
 .setTitle('🔧inviteMaster info🔧')
 .addFields(
@@ -92,7 +92,7 @@ let embed = new Discord.MessageEmbed()
 
 message.channel.send(embed);
  }
- if (message.content === "?invite") {
+ if (message.content === "-invite") {
 let embed2 = new Discord.MessageEmbed()
 .setTitle('invite le bot')
 .setImage('https://discord.com/oauth2/authorize?client_id=724896203833344052&scope=bot&permissions=2146958847')
@@ -105,7 +105,7 @@ message.channel.send(embed2);
 
    }
    
-   if (message.content === `?react`) { 	
+   if (message.content === `-react`) { 	
         message.react('731232586411540552');
     }
     
@@ -116,7 +116,7 @@ message.channel.send(embed2);
    	} 
    	
   client.on('message', message => { 
-  	if (message.content === '?join') { 		     
+  	if (message.content === '-join') { 		     
       	if (message.channel.type === 'dm') return; 		
   	const voiceChannel = message.member.voice.channel; 		
   	if (!voiceChannel) { 			
@@ -150,7 +150,7 @@ message.channel.send(embed3);
   if(message.content === "d") {
       message.channel.send('${user.username} ok')
   }
-  if (message.content === "?pp") {
+  if (message.content === "-pp") {
 let embed5 = new Discord.MessageEmbed()
 .setDescription('🏜 avatar')
 .setTitle('telecharger ici')
@@ -162,7 +162,7 @@ let embed5 = new Discord.MessageEmbed()
 message.channel.send(embed5); 
     }
     
-if(message.content === "?ticket") {
+if(message.content === "-ticket") {
  let embed7 = new Discord.MessageEmbed()
  .setTitle('')
 .setDescription('appuie sur la réaction 📩')
@@ -173,7 +173,7 @@ if(message.content === "?ticket") {
  
   }
   
-  if(message.content === "cv @Tutoriel Bot"){
+  if(message.content === "cv"){
       message.channel.send('tres bien et toi')
   }
   
