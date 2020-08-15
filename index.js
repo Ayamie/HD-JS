@@ -220,8 +220,7 @@ ctx.strokeRect(0, 0, canvas.width, canvas.height);
 const attachment = new Discord.MessageAttachment(canvas.toBuffer(), 'welcome-image.png'); 	
 channel.send(`Welcome to the server, ${member}!`, attachment); });
 
-	
-	    }
+  }
     
 if(message.content === "-botinfo") {
  let embed7 = new Discord.MessageEmbed()
@@ -233,6 +232,5 @@ if(message.content === "-botinfo") {
  
  message.channel.send(embed7);
  
-
 })
 client.login(process.env.TOKEN);
