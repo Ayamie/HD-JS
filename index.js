@@ -41,9 +41,10 @@ if (message.content === "-help"){
 let embed = new Discord.MessageEmbed()
 .setTitle('Hello! :)')
 .setDescription("**moderations**")
-.addField('ANTI BOT')       
-.setThumbnail('https://cdn.discordapp.com/attachments/738139327611142207/743484779579703306/20200813_110204.jpg')
-.setImage('https://cdn.discordapp.com/attachments/738139327611142207/743483573809446973/20200813_105737.jpg')
+.addField('ANTI BOT')   
+.addField('ban')
+.addField('kick')
+.setThumbnail('https://cdn.discordapp.com/attachments/728139161181224986/744307505240473650/1887_python.png')
 .setColor('#020202')
 .setFooter('jordan_offshl', 'https://cdn.discordapp.com/attachments/737388526848442459/742075728358539355/4713_ubot-1.png');
 
